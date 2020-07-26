@@ -22,3 +22,9 @@ ReactDOM.render(
   ,
   document.getElementById('root')
 );
+
+const mapStateToProps = (state) => {
+  return { users: state.users };
+};
+
+export default connect (mapStateToProps) (App);
